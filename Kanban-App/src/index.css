@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.draggable {
+    transition: background-color 0.5s linear;
+    background-color: rgb(248 250 252);
+  }
+  
+  .draggable.dragging {
+    background-color: rgb(203 213 225);
+    transition: background-color 2s linear;
+    text:white;
+  }
+
+
+
+  @media  screen and (max-width: 900px) and (min-width:400px) {
+    .draggables{
+      max-width: 40px;
+    }
+  }
